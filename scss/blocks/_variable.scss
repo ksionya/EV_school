@@ -1,0 +1,119 @@
+$colorwhite: #fff;
+$colorpurple: #883CDA;
+$colorblack: #141516;
+html, body {
+  height: 100%;
+}
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: $colorblack;
+  min-width: 375px;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1480px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+text-decoration: none;
+  svg {
+    vertical-align: middle;
+  }
+}
+.btn-purple {
+  color: #F8F8F8;
+  padding: 16px 32px;
+  background: #883CDA;
+  border: 1px solid #883CDA;
+  box-sizing: border-box;
+  border-radius: 35px;
+  &:hover {
+    box-shadow: 0px 1px 18px #9F8FB0;
+  }
+  &:disabled {
+    background: #CB9BFF;
+    border: 1px solid #CB9BFF;
+  }
+}
+.btn-white {
+  color: $colorpurple;
+  border: 1px solid #883CDA;
+  box-sizing: border-box;
+  border-radius: 35px;
+  padding: 16px 32px;
+  background: $colorwhite;
+  &:hover {
+    box-shadow: 0px 1px 18px #9F8FB0;
+  }
+  &:disabled {
+    border: 1px solid #CB9BFF;
+    color: #CB9BFF;
+    svg {
+      path {
+        fill: #CB9BFF;
+      }
+    }
+  }
+
+
+}
+h1 {
+  font-family: Impact;
+  font-weight: 900;
+  font-size: 76px;
+  line-height: 93px;
+  margin: 0 0 13px;
+}
+h2 {
+  font-family: Impact;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+  color: $colorblack;
+  margin: 0 0 24px;
+
+}
+h3 {
+  font-family: Impact;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 41px;
+  color: $colorblack;
+  margin: 0 0 16px;
+}
+
+.bg-pink {
+  background: #FB7C84;
+}
+.bg-orange {
+  background: #FFB865;
+}
+.bg-green {
+  background: #D4EE47;
+}
+.bg-green_dark {
+  background: #6ED6A4;
+}
+.bg-purple {
+  background: #883CDA;
+}
+.bg-blue {
+  background: #5AC4FF;
+}
+

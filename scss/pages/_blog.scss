@@ -1,0 +1,95 @@
+.main-blog {
+  padding: 102px 0 141px;
+}
+.blog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 31px 25px 0 0;
+  margin: 0 -12px;
+}
+.blog-list_item {
+  display: block;
+  width: 25%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #141516;
+  margin: 0 0 62px;
+  transition: all 0.2s ease;
+  .img-wrapper {
+    border-radius: 35px;
+    overflow: hidden;
+    margin: 0 0 24px;
+    max-height: 336px;
+    transition: all 0.2s ease;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+  }
+  &:hover {
+    .img-wrapper {
+      box-shadow: 0px 0px 14px 3px #8F8D9A;
+    }
+  }
+}
+.pagination {
+  margin: 15px 0 0;
+  padding: 0 0 0 3px;
+  ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0 44px;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration: none;
+    color: $colorblack;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $colorpurple;
+    }
+  }
+  b {
+    font-weight: 700;
+    line-height: 21px;
+    color: $colorpurple;
+  }
+}
+.btn-pagination {
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: all 0.2s ease;
+  padding: 0;
+  svg {
+    vertical-align: middle;
+    path {
+      transition: all 0.2s ease;
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        fill: $colorblack
+      }
+    }
+  }
+
+}

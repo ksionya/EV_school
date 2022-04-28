@@ -1,0 +1,66 @@
+@import './blocks/normalize';
+@import './blocks/slick';
+@import './blocks/select2.min';
+@import './blocks/fonts';
+@import './blocks/variable';
+@import './blocks/header';
+@import './pages/home';
+@import './pages/about';
+@import './pages/faq';
+@import './pages/contacts';
+@import './pages/blog';
+
+
+.crumbs {
+  padding: 68px 0 0;
+}
+.crumbs__in {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    //line-height: 30px;
+    &:last-child {
+     a {
+       font-weight: 400;
+       color: #A5A5A9;
+       &:after {
+         width: 0;
+       }
+     }
+    }
+  }
+  a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $colorblack;
+    text-decoration: none;
+    padding: 0 14px 0 0;
+    position: relative;
+    transition: all 0.2s ease;
+    &:after {
+      content: '';
+      width: 1px;
+      height: 30px;
+      background: #141516;
+      position: absolute;
+      top: -6px;
+      right: 4px;
+    }
+    &:hover {
+      color: $colorpurple;
+    }
+
+  }
+}
+* {
+  outline: none;
+}
+
+
+@import './blocks/footer';
+@import './blocks/media';
